@@ -1,7 +1,7 @@
 {
   "name": "@dpacks/repository",
   "version": "0.1.1",
-  "description": "dWeb's Authentication Library.",
+  "description": "dPack's Repository Client Library.",
   "main": "index.js",
   "contributors": [
     "Jared Rice Sr. <jared@dwebs.io>",
