@@ -1,6 +1,6 @@
 {
   "name": "@dpacks/repository",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "dPack's Repository Client Library.",
   "main": "index.js",
   "contributors": [
@@ -13,7 +13,7 @@
     "test": "standard && npm run deps && echo \"Error: no tests\" && exit 0"
   },
   "dependencies": {
-    "@dwauth/client": "dwauth/client#master",
+    "@dwauth/client": "*",
     "nets": "^3.2.0",
     "xtend": "^4.0.1"
   },
