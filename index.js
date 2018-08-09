@@ -19,7 +19,7 @@ function API (opts) {
 
   // set default dwid server & routes for dpacks.io
   if (!dwidOpts.config) dwidOpts.config = {}
-  if (!dwidOpts.config.filename) dwidOpts.config.filename = '.dpackrc'
+  if (!dwidOpts.config.filename) dwidOpts.config.filename = '.dwebrc'
   if (!dwidOpts.server) dwidOpts.server = SERVER
   if (!opts.routes && apiPath) {
     dwidOpts.routes = {
@@ -38,7 +38,7 @@ function API (opts) {
     register: dwid.register.bind(dwid),
     whoami: dwid.getLogin.bind(dwid),
     secureRequest: dwid.secureRequest.bind(dwid),
-    dpacks: rest('/dpacks'),
+    dwebs: rest('/dwebs'),
     users: xtend(rest('/users'), {
       resetPassword: function (input, cb) {
         nets({method: 'POST', uri: api + '/password-reset', body: input, json: true}, cb)
